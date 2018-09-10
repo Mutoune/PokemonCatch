@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Catch the Pokemon</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta content="en-us" http-equiv="Content-Language">
+	<link href="css/pokemoncatch.css" rel="stylesheet" type="text/css">
+	<script src="js/pokemoncatch.js" type="text/javascript"></script>
+</head>
+<body onload="init()">
+	<div class="main">
+		<div class="textArea">
+			<div class="scoreArea">
+				<div class="fontArea">SCORE:</div>
+				<input type="text" readonly="readonly" id="score" />
+				<div id="scoreReset" onclick="resetScore()">RESET</div>
+			</div>
+			<div class="speedArea">
+				<div class="fontArea">SPEED:</div>
+				<input type="text" readonly="readonly" id="speed" />
+				<div id="speedReset" onclick="resetSpeed()">RESET</div>
+			</div>
+		</div>
+		<div class="gameArea">
+			<div id="pokemon" onclick="goal()"></div>
+		</div>
+		<div class="infoArea">infoArea</div>
+		<div class="copyRightArea">@copyright</div>
+	</div>
+</body>
+</html>
